@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+/* General styling */
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+  background-color: #fdfcf9; /* Beige claro */
+  color: #4f4f4f; /* Gris oscuro */
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Section styling with pastel backgrounds */
+section {
+  padding: 40px 20px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+section:nth-child(odd) {
+  background: linear-gradient(145deg, #f8f6f2, #ffffff); /* Beige claro */
+}
+
+section:nth-child(even) {
+  background: linear-gradient(145deg, #eae8e4, #f7f6f5); /* Gris pastel */
+}
+
+/* Headings */
+h1,
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #4f4f4f; /* Gris oscuro */
+}
+
+h2 {
+  color: #7a7a7a; /* Gris medio */
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #5c5c5c; /* Gris suave */
+}
+
+/* Buttons */
+button,
+.map-button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #d4b89b; /* Beige pastel */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover,
+.map-button:hover {
+  background-color: #bfa890; /* Beige más oscuro */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-button {
+  text-decoration: none;
+}
+
+/* Images */
+img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Countdown Section */
+.countdown-section {
+  background: #f6f4f0; /* Beige claro */
+  color: #4f4f4f; /* Gris oscuro */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.countdown-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; /* Asegura que el texto se muestre encima del ícono */
+}
+
+.countdown-section h2 svg {
+  position: absolute;
+  left: 100%;
+  transform: translateX(-70%) rotate(-20deg) translateY(30%); /* Centrado horizontalmente y rotación leve */
+  color: #c0c0c0; /* Beige pastel */
+  font-size: 8rem; /* Tamaño grande del ícono */
+  z-index: 0; /* Asegura que el ícono quede detrás del texto */
+}
+
+/* Día del evento */
+.event-day {
+  font-size: 5rem; /* Tamaño grande */
+  font-weight: 700; /* Letra más gruesa */
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+  color: #d4b89b; /* Dorado cálido */
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(191, 167, 90, 0.7); /* Brillo dorado */
+}
+
+/* Fecha (Mes y Año) */
+.event-month-year {
+  font-size: 1.5rem; /* Tamaño para mes y año */
+  font-weight: 600; /* Letra semi-gruesa */
+  font-family: serif; /* Tipografía elegante */
+  color: #7a7a7a; /* Gris medio */
+  margin: 5px 0 0 0; /* Espaciado */
+}
+
+/* Hora */
+.event-time {
+  font-size: 1.5rem; /* Mismo tamaño que el mes y año */
+  font-weight: 600; /* Letra semi-gruesa */
+  font-family: serif; /* Tipografía elegante */
+  color: #7a7a7a; /* Gris medio */
+  margin: 0; /* Sin margen extra */
+}
+
+.time-left {
+  font-size: 1.3rem;
+  color: #d4b89b;
+  margin-top: 20px;
+}
+
+/* Gallery section */
+.gallery-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; /* Asegura que el texto se muestre encima del ícono */
+}
+
+.gallery-section h2 svg {
+  position: absolute;
+  left: 0%;
+  transform: translateX(-40%) rotate(20deg) translateY(-50%); /* Centrado horizontalmente y rotación leve */
+  color: #c0c0c0; /* Beige pastel */
+  font-size: 8rem; /* Tamaño grande del ícono */
+  z-index: 0; /* Asegura que el ícono quede detrás del texto */
+}
+
+.gallery-section .slick-center img {
+  margin: 0 auto; /* Centra la imagen */
+  display: block; /* Hace que la imagen se comporte como un bloque */
+}
+
+/* RSVP Section */
+.rsvp-section {
+  background: #f6f4f0; /* Beige claro */
+  color: #4f4f4f; /* Gris oscuro */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.rsvp-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4f4f4f;
+  margin-bottom: 15px;
+}
+
+/* Botones de respuesta */
+.rsvp-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaciado entre botones */
+  margin-bottom: 20px;
+}
+
+.rsvp-buttons button {
+  background: #d4b89b; /* Dorado cálido */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rsvp-buttons button:hover {
+  background: #b39576; /* Tonalidad más oscura al pasar el mouse */
+}
+
+.rsvp-buttons button svg {
+  margin-right: 8px;
+}
+
+/* Respuesta */
+.rsvp-response {
+  font-size: 1.3rem;
+  color: #4f4f4f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Dress Code */
+.dress-code-section {
+  position: relative; /* Necesario para que el posicionamiento absoluto funcione */
+  background: linear-gradient(145deg, #f2ede8, #ffffff); /* Blanco roto */
+  color: #4f4f4f;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.dress-code-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; /* Asegura que el texto se muestre encima del ícono */
+}
+
+.dress-code-section h2 svg {
+  position: absolute;
+  left: 100%;
+  transform: translateX(-40%) rotate(-20deg) translateY(-30%); /* Centrado horizontalmente y rotación leve */
+  color: #c0c0c0; /* Beige pastel */
+  font-size: 8rem; /* Tamaño grande del ícono */
+  z-index: 0; /* Asegura que el ícono quede detrás del texto */
+}
+
+/* Bank Details */
+.bank-details-section {
+  background: linear-gradient(145deg, #eae6e1, #ffffff); /* Beige suave */
+  color: #4f4f4f;
+}
+
+.bank-details-section p,
+.bank-details-section h2 {
+  margin-bottom: 10px;
+}
+
+.bank-details-section h2 svg {
+  position: absolute;
+  left: 0%;
+  transform: translateX(-40%) rotate(20deg) translateY(-50%); /* Centrado horizontalmente y rotación leve */
+  color: #c0c0c0; /* Beige pastel */
+  font-size: 8rem; /* Tamaño grande del ícono */
+  z-index: 0; /* Asegura que el ícono quede detrás del texto */
+}
+
+.special-message {
+  font-size: 1rem; /* Tamaño más pequeño */
+  color: #7a7a7a; /* Gris medio */
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif; /* Tipografía elegante */
+  line-height: 1.5; /* Mejor legibilidad */
+  text-align: center; /* Texto justificado */
+  max-width: 600px; /* Ancho máximo */
+  margin: 0 auto 20px; /* Centrado horizontal */
+  z-index: 1;
+  position: relative;
+}
+
+.map-button-section {
+    background: #f6f4f0; /* Beige claro */
+    color: #4f4f4f; /* Gris oscuro */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.map-button-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1; /* Asegura que el texto se muestre encima del ícono */
+}
+
+.map-button-section h2 svg {
+  position: absolute;
+  /* left: 50%; */
+  transform: translateX(-50%) rotate(0deg) translateY(0%); /* Centrado horizontalmente y rotación leve */
+  color: #c0c0c0; /* Beige pastel */
+  font-size: 8rem; /* Tamaño grande del ícono */
+  z-index: 0; /* Asegura que el ícono quede detrás del texto */
+}
